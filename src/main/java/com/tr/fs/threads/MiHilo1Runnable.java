@@ -1,6 +1,6 @@
 package com.tr.fs.threads;
 
-public class MiHilo1 implements Runnable {
+public class MiHilo1Runnable implements Runnable {
     @Override
     public void run() {
         for (int i = 0; i < 5; i++) {
