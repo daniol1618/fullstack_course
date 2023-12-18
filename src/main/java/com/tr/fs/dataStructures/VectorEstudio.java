@@ -1,7 +1,7 @@
-package com.tr.fs.dataStructures.List;
+package com.tr.fs.dataStructures;
 
-import com.tr.fs.dataStructures.List.model.Genero;
-import com.tr.fs.dataStructures.List.model.Persona;
+import com.tr.fs.model.Genero;
+import com.tr.fs.model.Persona;
 
 import java.util.Vector;
 

@@ -1,16 +1,16 @@
-package com.tr.fs.dataStructures.List;
+package com.tr.fs.streams;
 
-import com.tr.fs.dataStructures.List.model.Genero;
-import com.tr.fs.dataStructures.List.model.Persona;
+import com.tr.fs.model.Genero;
+import com.tr.fs.model.Persona;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class ListaEstudio {
+public class StreamsStudio {
 
-    public static List<Persona> generarListaPersonas() {
+    public List<Persona> estudioStreams() {
         List<Persona> personas = new ArrayList<>();
         personas.add(new Persona("Daniel", 33, Genero.MASCULINO));
         personas.add(new Persona("Natalia", 13, Genero.FEMENINO));
@@ -22,26 +22,12 @@ public class ListaEstudio {
     }
 
     public Stream<Persona> obtenerPersonasOrdenadasPorNombre() {
-        return generarListaPersonas().stream()
+        return estudioStreams().stream()
                 .sorted(Comparator.comparing(Persona::getNombre));
     }
 
     public Stream<Persona> obtenerPersonasOrdenadasPorEdadReversed() {
-        return generarListaPersonas().stream()
+        return estudioStreams().stream()
                 .sorted(Comparator.comparing(Persona::getEdad).reversed());
-    }
-
-    public int contarNumeroPersonas() {
-        return generarListaPersonas().size();
-    }
-
-    public Persona obtenerPrimeraPersona() {
-        return generarListaPersonas().get(0);
-    }
-
-    public List<Persona> addicionarNuevaPersona() {
-        Persona p = new Persona("Yaneth", 55, Genero.FEMENINO);
-        generarListaPersonas().add(p);
-        return generarListaPersonas();
     }
 }

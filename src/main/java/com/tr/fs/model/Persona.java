@@ -1,4 +1,4 @@
-package com.tr.fs.dataStructures.List.model;
+package com.tr.fs.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
