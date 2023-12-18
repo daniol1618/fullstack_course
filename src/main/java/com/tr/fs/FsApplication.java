@@ -1,6 +1,5 @@
 package com.tr.fs;
 
-import com.tr.fs.dataStructures.ListaEstudio;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

@@ -1,4 +1,4 @@
-package com.tr.fs.dataStructures;
+package com.tr.fs.dataStructures.list;
 
 import com.tr.fs.model.Genero;
 import com.tr.fs.model.Persona;

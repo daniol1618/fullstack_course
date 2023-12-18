@@ -1,4 +1,4 @@
-package com.tr.fs.dataStructures;
+package com.tr.fs.dataStructures.set;
 
 import com.tr.fs.model.Genero;
 import com.tr.fs.model.Persona;
@@ -8,10 +8,10 @@ import java.util.*;
 /**
  * A collection that contains no duplicate elements. More formally, sets contain no pair of elements e1 and e2 such that e1.equals(e2), and at most one null element. As implied by its name, this interface models the mathematical set abstraction.
  */
-public class SortedSetEstudio {
+public class HashSetEstudio {
 
-    public SortedSet<Persona> estudioListas() {
-        SortedSet<Persona> personas = new TreeSet<>(Comparator.comparing(Persona::getEdad)); // SortedSet implementation of Set
+    public Set<Persona> estudioListas() {
+        Set<Persona> personas = new HashSet<>(); // HashSet implementation of Set
         personas.add(new Persona("Daniel", 33, Genero.MASCULINO));
         personas.add(new Persona("Natalia", 13, Genero.FEMENINO));
         personas.add(new Persona("Felipe", 43, Genero.MASCULINO));
@@ -21,8 +21,8 @@ public class SortedSetEstudio {
     }
 
     public static void main(String[] args) {
-        SortedSetEstudio hashSetEstudio = new SortedSetEstudio();
-        SortedSet<Persona> setPersonas = hashSetEstudio.estudioListas();
+        HashSetEstudio hashSetEstudio = new HashSetEstudio();
+        Set<Persona> setPersonas = hashSetEstudio.estudioListas();
 
         System.out.println("--- SET ORIGINAL ---");
         setPersonas.forEach(System.out::println);
@@ -32,10 +32,6 @@ public class SortedSetEstudio {
         System.out.println(tamano);
 
         System.out.println("--- ADICIONAR PERSONA YAMILA---");
-        setPersonas.add(new Persona("Yamila", 22, Genero.NOINFORMA));
-        setPersonas.forEach(System.out::println);
-
-        System.out.println("--- ADICIONAR NUEVAMENTE PERSONA YAMILA---");
         setPersonas.add(new Persona("Yamila", 22, Genero.NOINFORMA));
         setPersonas.forEach(System.out::println);
 

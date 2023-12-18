@@ -1,11 +1,9 @@
-package com.tr.fs.dataStructures;
+package com.tr.fs.dataStructures.list;
 
 import com.tr.fs.model.Genero;
 import com.tr.fs.model.Persona;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * Doubly-linked list implementation of the List and Deque interfaces. Implements all optional list operations, and permits all elements (including null).

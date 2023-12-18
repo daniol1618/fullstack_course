@@ -1,4 +1,4 @@
-package com.tr.fs.dataStructures;
+package com.tr.fs.dataStructures.vectoresFijos;
 
 public class ArreglosTradicionales {
 
