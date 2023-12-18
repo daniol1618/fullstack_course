@@ -13,10 +13,8 @@ public class FsApplication {
         ListaEstudio listaEstudio = new ListaEstudio();
         //listaEstudio.obtenerPersonasOrdenadasPorNombre().forEach(System.out::println);
         //listaEstudio.obtenerPersonasOrdenadasPorEdadReversed().forEach(System.out::println);
-        System.out.println(listaEstudio.obtenerPrimeraPersona());
-        System.out.println(listaEstudio.contarNumeroPersonas());
-        System.out.println(listaEstudio.addicionarNuevaPersona());
-
-
+        //System.out.println(listaEstudio.obtenerPrimeraPersona());
+        //System.out.println(listaEstudio.contarNumeroPersonas());
+        //System.out.println(listaEstudio.addicionarNuevaPersona());
     }
 }
