@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 
 public class ListaEstudio {
 
-    public static List<Persona> ListaEstudio() {
+    public static List<Persona> generarListaPersonas() {
         List<Persona> personas = new ArrayList<>();
         personas.add(new Persona("Daniel", 33, Genero.MASCULINO));
         personas.add(new Persona("Natalia", 13, Genero.FEMENINO));
@@ -22,13 +22,12 @@ public class ListaEstudio {
     }
 
     public Stream<Persona> obtenerPersonasOrdenadasPorNombre() {
-        return ListaEstudio().stream()
+        return generarListaPersonas().stream()
                 .sorted(Comparator.comparing(Persona::getNombre));
     }
 
     public Stream<Persona> obtenerPersonasOrdenadasPorEdadReversed() {
-
-        return ListaEstudio().stream()
+        return generarListaPersonas().stream()
                 .sorted(Comparator.comparing(Persona::getEdad).reversed());
     }
 }
