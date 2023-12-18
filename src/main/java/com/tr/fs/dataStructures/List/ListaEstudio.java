@@ -30,4 +30,18 @@ public class ListaEstudio {
         return generarListaPersonas().stream()
                 .sorted(Comparator.comparing(Persona::getEdad).reversed());
     }
+
+    public int contarNumeroPersonas() {
+        return generarListaPersonas().size();
+    }
+
+    public Persona obtenerPrimeraPersona() {
+        return generarListaPersonas().get(0);
+    }
+
+    public List<Persona> addicionarNuevaPersona() {
+        Persona p = new Persona("Yaneth", 55, Genero.FEMENINO);
+        generarListaPersonas().add(p);
+        return generarListaPersonas();
+    }
 }
