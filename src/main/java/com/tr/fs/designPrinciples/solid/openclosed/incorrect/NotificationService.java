@@ -1,4 +1,4 @@
-package com.tr.fs.solid.openclosed.incorrect;
+package com.tr.fs.designPrinciples.solid.openclosed.incorrect;
 
 public class NotificationService {
     public void sendNotification(String message, String medium) {

@@ -1,4 +1,4 @@
-package com.tr.fs.solid.singleResponsibility.correct;
+package com.tr.fs.designPrinciples.solid.singleResponsibility.correct;
 
 // BookFormatter class responsible for formatting book details for display
 public class BookFormatter {

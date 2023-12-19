@@ -1,4 +1,4 @@
-package com.tr.fs.solid.singleResponsibility.correct;
+package com.tr.fs.designPrinciples.solid.singleResponsibility.correct;
 
 // Book class responsible for managing book details
 public class Book {

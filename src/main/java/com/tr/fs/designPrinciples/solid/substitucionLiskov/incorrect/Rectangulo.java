@@ -1,4 +1,4 @@
-package com.tr.fs.solid.substitucionLiskov.incorrect;
+package com.tr.fs.designPrinciples.solid.substitucionLiskov.incorrect;
 
 class Rectangulo {
     protected int ancho;

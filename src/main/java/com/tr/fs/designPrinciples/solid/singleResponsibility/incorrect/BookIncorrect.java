@@ -1,4 +1,4 @@
-package com.tr.fs.solid.singleResponsibility.incorrect;
+package com.tr.fs.designPrinciples.solid.singleResponsibility.incorrect;
 
 public class BookIncorrect {
     private String title;

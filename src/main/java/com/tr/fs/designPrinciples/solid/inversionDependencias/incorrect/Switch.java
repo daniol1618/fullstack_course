@@ -1,4 +1,4 @@
-package com.tr.fs.solid.inversionDependencias.incorrect;
+package com.tr.fs.designPrinciples.solid.inversionDependencias.incorrect;
 
 class Switch {
     public void encender() {

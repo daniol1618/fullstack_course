@@ -1,4 +1,4 @@
-package com.tr.fs.solid.segregacionInterfaces.correct;
+package com.tr.fs.designPrinciples.solid.segregacionInterfaces.correct;
 
 interface Impresora {
     void imprimir(String documento);

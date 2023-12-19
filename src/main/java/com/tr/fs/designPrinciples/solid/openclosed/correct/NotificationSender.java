@@ -1,4 +1,4 @@
-package com.tr.fs.solid.openclosed.correct;
+package com.tr.fs.designPrinciples.solid.openclosed.correct;
 
 interface NotificationSender {
     void send(String message);

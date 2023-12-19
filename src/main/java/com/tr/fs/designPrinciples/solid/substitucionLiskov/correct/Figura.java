@@ -1,4 +1,4 @@
-package com.tr.fs.solid.substitucionLiskov.correct;
+package com.tr.fs.designPrinciples.solid.substitucionLiskov.correct;
 
 interface Figura {
     int calcularArea();

@@ -1,4 +1,4 @@
-package com.tr.fs.solid.segregacionInterfaces.incorrect;
+package com.tr.fs.designPrinciples.solid.segregacionInterfaces.incorrect;
 
 public interface ImpresoraMultifuncional {
     void print(String document);

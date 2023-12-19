@@ -1,4 +1,4 @@
-package com.tr.fs.solid.inversionDependencias.correct;
+package com.tr.fs.designPrinciples.solid.inversionDependencias.correct;
 
 interface ISwitcheable {
     void encender();
