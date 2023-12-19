@@ -1,8 +1,5 @@
 package com.tr.fs.dataStructures.map;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.SortedMap;
 import java.util.TreeMap;
 
 /**
