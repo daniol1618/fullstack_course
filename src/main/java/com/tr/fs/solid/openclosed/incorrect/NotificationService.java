@@ -1,3 +1,5 @@
+package com.tr.fs.solid.openclosed.incorrect;
+
 public class NotificationService {
     public void sendNotification(String message, String medium) {
         if (medium.equalsIgnoreCase("email")) {
