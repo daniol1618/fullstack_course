@@ -57,9 +57,10 @@ public class LambdasEstudio {
             return a.getEdad().compareTo(b.getEdad());
         });
 
-        System.out.println("Nombres Personas" + "\n" + nombresPersonas);
+        /*System.out.println("Nombres Personas" + "\n" + nombresPersonas);
         System.out.println("Enteros" + "\n" + enteros);
         System.out.println("Personas:" + "\n" + personas);
+        */
 
         //Ahora, utilizando el ordenamiento de la Clase Collections
         ArrayList<String> nombresPersonas2 = new ArrayList<>(List.of("Gabriela", "Myriam", "Yaneth", "Fernando"));
@@ -83,6 +84,25 @@ public class LambdasEstudio {
             return a.getNombre().compareTo(b.getNombre());
         });
 
+        //Preparacion para el Binay Search
+        ArrayList<String> nombresPersonas3 = new ArrayList<>(List.of("Gabriela", "Myriam", "Yaneth", "Fernando"));
+        ArrayList<Integer> enteros3 = new ArrayList<>(List.of(5, 4, 6, 2, 9, 44));
+
+        List<Persona> personas3 = new ArrayList<>(
+                List.of(
+                        new Persona("Daniel", 32, Genero.NOINFORMA),
+                        new Persona("Francis", 35, Genero.FEMENINO),
+                        new Persona("Caroline", 3, Genero.FEMENINO)
+                )
+        );
+
+        Collections.sort(nombresPersonas3);
+        System.out.println(nombresPersonas3);
+        String elementoABuscar = "Yaneth";
+        int posicionElementoEncontrado = Collections.binarySearch(nombresPersonas3, elementoABuscar);
+        System.out.println(
+                "Elemento a Buscar: " + elementoABuscar +
+                        " ,Posicion Elemento encontrado: " + posicionElementoEncontrado);
     }
 
     public static void main(String[] args) {
