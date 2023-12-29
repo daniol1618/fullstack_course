@@ -11,5 +11,7 @@ public class Runner {
 
         gato.comerAlimentos();
         perro.comerAlimentos();
+
+        //Animal animal = new Animal(); No se puede hacer esto en una clase abstracta
     }
 }
