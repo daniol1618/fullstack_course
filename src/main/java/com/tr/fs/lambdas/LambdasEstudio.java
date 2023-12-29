@@ -103,6 +103,20 @@ public class LambdasEstudio {
         System.out.println(
                 "Elemento a Buscar: " + elementoABuscar +
                         " ,Posicion Elemento encontrado: " + posicionElementoEncontrado);
+
+        Collections.reverse(nombresPersonas);
+        System.out.println(nombresPersonas);
+
+        System.out.println(enteros3);
+        Collections.shuffle(enteros3);
+        System.out.println(enteros3);
+        //2,5,6,4,44,9
+
+        Collections.swap(enteros3, 0,1);
+        System.out.println(enteros3);
+
+        Collections.fill(enteros3,44);
+        System.out.println(enteros3);
     }
 
     public static void main(String[] args) {
