@@ -1,4 +1,4 @@
-package com.tr.fs.poo;
+package com.tr.fs.poo.abstractas;
 
 //Las clases Abstractas son clases que pueden o no tener metodos abstractos o concretos
 public abstract class Animal {

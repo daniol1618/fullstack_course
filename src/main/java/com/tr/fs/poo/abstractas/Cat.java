@@ -1,4 +1,4 @@
-package com.tr.fs.poo;
+package com.tr.fs.poo.abstractas;
 
 public class Cat extends Animal{
     @Override
