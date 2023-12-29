@@ -7,10 +7,12 @@ public class Runner {
         Delfin delfin = new Delfin();
         System.out.println(delfin.hacerSonido());
         delfin.comerAlimentos();
+        System.out.println("Cantidad Cuidadores Delfin: " + Delfin.cantidadCuidadores);
 
         System.out.println("\n" + "Camello sin override del metodo default:");
         Camell camell = new Camell();
         System.out.println(camell.hacerSonido());
         camell.comerAlimentos();
+        System.out.println("Cantidad Cuidadores Camello: " + Camell.cantidadCuidadores);
     }
 }
