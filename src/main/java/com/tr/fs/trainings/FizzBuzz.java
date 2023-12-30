@@ -33,7 +33,7 @@ public class FizzBuzz {
                 System.out.println(lista);
         */
 
-        IntStream.rangeClosed(1, 100)
+        /*IntStream.rangeClosed(1, 100)
                 .mapToObj((i) -> {
                     if (i % 3 == 0 && i % 5 == 0) {
                         return ("FizzBuzz: " + i);
@@ -46,5 +46,18 @@ public class FizzBuzz {
                     }
                 })
                 .forEach(System.out::println);
+                */
+
+        IntStream.rangeClosed(1, 100).forEach((i) -> {
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("FizzBuzz: " + i);
+            } else if (i % 3 == 0) {
+                System.out.println("Fizz: " + i);
+            } else if (i % 5 == 0) {
+                System.out.println("Buzz: " + i);
+            } else {
+                System.out.println("Nada: " + i);
+            }
+        });
     }
 }
