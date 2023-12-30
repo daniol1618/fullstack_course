@@ -26,19 +26,12 @@ public class Palindrome {
         System.out.println(listaReversada);
         System.out.println(listaOrdenada);
 
-        //5.Comparar
-        if (listaOrdenada.equals(listaReversada)) {
-            System.out.println("Iguales");
-            return true;
-        } else {
-            System.out.println("Diferentes");
-            return false;
-        }
+        //5.Comparar y retornar
+        return (listaOrdenada.equals(listaReversada));
     }
 
     public static void main(String[] args) {
         Palindrome palindrome = new Palindrome();
         System.out.println(palindrome.esPalindrome("anna"));
-
     }
 }
