@@ -8,17 +8,9 @@ package com.tr.fs.poo.anonimas;
 public class Cuadrado {
 
     public static void main(String[] args) {
-
-        //Esta es la implementacion de la clase anonima
-        IFigura figura = new IFigura() {
-            @Override
-            public Double calcularArea() {
-                Double lado = 10.00;
-                return Math.pow(lado, 2);
-            }
-        };
-
-        System.out.println(figura.calcularArea());
+        Double lado = 8.00;
+        //Esta es la implementacion de la clase anonima convertida en una lambda function
+        IFigura figura = (a) -> Math.pow(a, 2);
+        System.out.println(figura.calcularArea(lado));
     }
-
 }
