@@ -1,6 +1,9 @@
 package com.tr.fs.trainings;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 /**
  * 1. FizzBuzz:
@@ -13,7 +16,7 @@ public class FizzBuzz {
 
     public static void main(String[] args) {
 
-        ArrayList<String> lista = new ArrayList();
+        /*ArrayList<String> lista = new ArrayList();
         for (int i = 0; i <= 100; i++) {
             System.out.println(i);
 
@@ -27,7 +30,21 @@ public class FizzBuzz {
                 lista.add("Nada: " + i);
             }
         }
+                System.out.println(lista);
+        */
 
-        System.out.println(lista);
+        IntStream.rangeClosed(1, 100)
+                .mapToObj((i) -> {
+                    if (i % 3 == 0 && i % 5 == 0) {
+                        return ("FizzBuzz: " + i);
+                    } else if (i % 3 == 0) {
+                        return ("Fizz: " + i);
+                    } else if (i % 5 == 0) {
+                        return ("Buzz: " + i);
+                    } else {
+                        return ("Nada: " + i);
+                    }
+                })
+                .forEach(System.out::println);
     }
 }
