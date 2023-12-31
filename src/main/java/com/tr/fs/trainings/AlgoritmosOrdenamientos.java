@@ -5,6 +5,7 @@ package com.tr.fs.trainings;
  * bubble sort, merge sort, or quicksort in Java.
  * Test and compare their efficiency for large datasets.
  */
+//todo: pending for implementation
 public class AlgoritmosOrdenamientos {
 
 
