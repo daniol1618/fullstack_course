@@ -1,13 +1,12 @@
-package com.example.functional_study.streams;
+package com.tr.fs.streams;
 
-import com.example.functional_study.streams.world.Order;
-import com.example.functional_study.streams.world.Product;
+import com.tr.fs.streams.world.Order;
+import com.tr.fs.streams.world.Product;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class PracticaStreams {
 

@@ -1,4 +1,4 @@
-package com.example.functional_study.streams.world;
+package com.tr.fs.streams.world;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

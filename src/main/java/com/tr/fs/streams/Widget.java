@@ -1,4 +1,4 @@
-package com.example.functional_study.streams;
+package com.tr.fs.streams;
 
 import lombok.Builder;
 import lombok.Data;
